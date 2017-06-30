@@ -114,7 +114,7 @@ class HtmlApi
      */
     public function htmlPost($request, $licenceCode)
     {
-        list($response) = $this->htmlPostWithHttpInfo($request);
+        list($response) = $this->htmlPostWithHttpInfo($request, $licenceCode);
         return $response;
     }
 

@@ -18,3 +18,5 @@
 /fuel/app/config/crypt.php
 
 /.idea
+/vendor
+composer.lock

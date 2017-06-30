@@ -114,7 +114,7 @@ class AsyncWordCloudResultApi
      */
     public function asyncWordCloudResultGetResult($task_id, $licenceCode)
     {
-        list($response) = $this->asyncWordCloudResultGetResultWithHttpInfo($task_id);
+        list($response) = $this->asyncWordCloudResultGetResultWithHttpInfo($task_id, $licenceCode);
         return $response;
     }
 

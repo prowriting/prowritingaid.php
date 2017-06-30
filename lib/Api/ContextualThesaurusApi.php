@@ -114,7 +114,7 @@ class ContextualThesaurusApi
      */
     public function contextualThesaurusPost($request, $licenceCode)
     {
-        list($response) = $this->contextualThesaurusPostWithHttpInfo($request);
+        list($response) = $this->contextualThesaurusPostWithHttpInfo($request, $licenceCode);
         return $response;
     }
 

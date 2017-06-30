@@ -114,7 +114,7 @@ class AsyncTextApi
      */
     public function asyncTextPost($request, $licenceCode)
     {
-        list($response) = $this->asyncTextPostWithHttpInfo($request);
+        list($response) = $this->asyncTextPostWithHttpInfo($request, $licenceCode);
         return $response;
     }
 

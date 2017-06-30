@@ -114,7 +114,7 @@ class AsyncSummaryResultApi
      */
     public function asyncSummaryResultGetResult($task_id, $licenceCode)
     {
-        list($response) = $this->asyncSummaryResultGetResultWithHttpInfo($task_id);
+        list($response) = $this->asyncSummaryResultGetResultWithHttpInfo($task_id, $licenceCode);
         return $response;
     }
 

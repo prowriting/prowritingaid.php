@@ -114,7 +114,7 @@ class AsyncWordCloudApi
      */
     public function asyncWordCloudPost($request, $licenceCode)
     {
-        list($response) = $this->asyncWordCloudPostWithHttpInfo($request);
+        list($response) = $this->asyncWordCloudPostWithHttpInfo($request, $licenceCode);
         return $response;
     }
 

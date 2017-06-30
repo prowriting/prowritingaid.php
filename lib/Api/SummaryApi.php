@@ -114,7 +114,7 @@ class SummaryApi
      */
     public function summaryPost($request, $licenceCode)
     {
-        list($response) = $this->summaryPostWithHttpInfo($request);
+        list($response) = $this->summaryPostWithHttpInfo($request, $licenceCode);
         return $response;
     }
 

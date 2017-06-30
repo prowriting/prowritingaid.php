@@ -114,7 +114,7 @@ class AsyncHtmlApi
      */
     public function asyncHtmlPost($request, $licenceCode)
     {
-        list($response) = $this->asyncHtmlPostWithHttpInfo($request);
+        list($response) = $this->asyncHtmlPostWithHttpInfo($request, $licenceCode);
         return $response;
     }
 

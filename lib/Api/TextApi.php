@@ -114,7 +114,7 @@ class TextApi
      */
     public function textPost($request, $licenceCode)
     {
-        list($response) = $this->textPostWithHttpInfo($request);
+        list($response) = $this->textPostWithHttpInfo($request, $licenceCode);
         return $response;
     }
 

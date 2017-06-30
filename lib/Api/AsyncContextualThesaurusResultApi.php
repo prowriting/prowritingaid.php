@@ -114,7 +114,7 @@ class AsyncContextualThesaurusResultApi
      */
     public function asyncContextualThesaurusResultGetResult($task_id, $licenceCode)
     {
-        list($response) = $this->asyncContextualThesaurusResultGetResultWithHttpInfo($task_id);
+        list($response) = $this->asyncContextualThesaurusResultGetResultWithHttpInfo($task_id, $licenceCode);
         return $response;
     }
 

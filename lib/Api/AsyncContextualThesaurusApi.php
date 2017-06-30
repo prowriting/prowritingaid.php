@@ -115,7 +115,7 @@ class AsyncContextualThesaurusApi
      */
     public function asyncContextualThesaurusPost($request, $licenceCode)
     {
-        list($response) = $this->asyncContextualThesaurusPostWithHttpInfo($request);
+        list($response) = $this->asyncContextualThesaurusPostWithHttpInfo($request, $licenceCode);
         return $response;
     }
 

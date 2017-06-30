@@ -114,7 +114,7 @@ class AsyncTextResultApi
      */
     public function asyncTextResultGetResult($task_id, $licenceCode)
     {
-        list($response) = $this->asyncTextResultGetResultWithHttpInfo($task_id);
+        list($response) = $this->asyncTextResultGetResultWithHttpInfo($task_id, $licenceCode);
         return $response;
     }
 

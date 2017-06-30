@@ -114,7 +114,7 @@ class AsyncSummaryApi
      */
     public function asyncSummaryPost($request, $licenceCode)
     {
-        list($response) = $this->asyncSummaryPostWithHttpInfo($request);
+        list($response) = $this->asyncSummaryPostWithHttpInfo($request, $licenceCode);
         return $response;
     }
 
