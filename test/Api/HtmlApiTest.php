@@ -106,7 +106,7 @@ class HtmlApiTest extends \PHPUnit_Framework_TestCase
             "style"=>"General",
             "language"=>"en"
             ));
-        $response=$api->htmlPost($request,"");
+        $response=$api->htmlPost($request, "$licenceCode$");
         echo $response;
     }
 
