@@ -102,7 +102,7 @@ class Configuration
      *
      * @var string
      */
-    protected $host = 'http://localhost:5004';
+    protected $host = 'https://api.prowritingaid.com';
 
     /**
      * Timeout (second) of the HTTP request, by default set to 0, no timeout

@@ -100,6 +100,8 @@ class HtmlApiTest extends \PHPUnit_Framework_TestCase
     public function testHtmlPost()
     {
         $api = new HtmlApi();
+        $data = array();
+        $data["html"] = "";
         $request = new HtmlAnalysisRequest(array(
             "html"=>"",
             "reports"=>array("grammar"),

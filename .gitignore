@@ -4,9 +4,6 @@
 # /composer.lock
 /fuel/vendor
 
-# the fuelphp document
-/docs/
-
 # you may install these packages with `oil package`.
 # http://fuelphp.com/docs/packages/oil/package.html
 # /fuel/packages/auth/
