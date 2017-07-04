@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **text** | **string** | Text to be analyzed | 
-**settings** | [**\Swagger\Client\Model\AnalysisSettings**](AnalysisSettings.md) | Analysis settings | [optional] 
+**settings** | [**\Swagger\Client\Model\AnalysisSettings**](AnalysisSettings.md) | Analysis settings | 
 **style** | **string** | Document&#39;s writing style | 
 **language** | **string** | Document&#39;s language  &lt;remarks&gt;  Set correct UK/US language to get region-specific suggestions  &lt;/remarks&gt; | 
 

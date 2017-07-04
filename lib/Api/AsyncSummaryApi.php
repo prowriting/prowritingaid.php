@@ -73,7 +73,7 @@ class AsyncSummaryApi
     {
         if ($apiClient == null) {
             $apiClient = new ApiClient();
-            $apiClient->getConfig()->setHost('https://api.prowritingaid.com/');
+            $apiClient->getConfig()->setHost('https://api.prowritingaid.com');
         }
 
         $this->apiClient = $apiClient;

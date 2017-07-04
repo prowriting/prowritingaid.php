@@ -66,9 +66,7 @@ class ContextualThesaurusResponse implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = array(
-        'suggestions' => 'string[]',
-        'url' => 'string',
-        'language' => 'string'
+        'suggestions' => 'string[]'
     );
 
     public static function swaggerTypes()
@@ -81,9 +79,7 @@ class ContextualThesaurusResponse implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = array(
-        'suggestions' => 'Suggestions',
-        'url' => 'Url',
-        'language' => 'Language'
+        'suggestions' => 'Suggestions'
     );
 
     public static function attributeMap()
@@ -96,9 +92,7 @@ class ContextualThesaurusResponse implements ArrayAccess
      * @var string[]
      */
     protected static $setters = array(
-        'suggestions' => 'setSuggestions',
-        'url' => 'setUrl',
-        'language' => 'setLanguage'
+        'suggestions' => 'setSuggestions'
     );
 
     public static function setters()
@@ -111,9 +105,7 @@ class ContextualThesaurusResponse implements ArrayAccess
      * @var string[]
      */
     protected static $getters = array(
-        'suggestions' => 'getSuggestions',
-        'url' => 'getUrl',
-        'language' => 'getLanguage'
+        'suggestions' => 'getSuggestions'
     );
 
     public static function getters()
@@ -138,8 +130,6 @@ class ContextualThesaurusResponse implements ArrayAccess
     public function __construct(array $data = null)
     {
         $this->container['suggestions'] = isset($data['suggestions']) ? $data['suggestions'] : null;
-        $this->container['url'] = isset($data['url']) ? $data['url'] : null;
-        $this->container['language'] = isset($data['language']) ? $data['language'] : null;
     }
 
     /**
@@ -182,48 +172,6 @@ class ContextualThesaurusResponse implements ArrayAccess
     public function setSuggestions($suggestions)
     {
         $this->container['suggestions'] = $suggestions;
-
-        return $this;
-    }
-
-    /**
-     * Gets url
-     * @return string
-     */
-    public function getUrl()
-    {
-        return $this->container['url'];
-    }
-
-    /**
-     * Sets url
-     * @param string $url the URL of the Word Cloud
-     * @return $this
-     */
-    public function setUrl($url)
-    {
-        $this->container['url'] = $url;
-
-        return $this;
-    }
-
-    /**
-     * Gets language
-     * @return string
-     */
-    public function getLanguage()
-    {
-        return $this->container['language'];
-    }
-
-    /**
-     * Sets language
-     * @param string $language The detected language of the text
-     * @return $this
-     */
-    public function setLanguage($language)
-    {
-        $this->container['language'] = $language;
 
         return $this;
     }

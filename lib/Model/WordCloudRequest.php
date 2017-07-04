@@ -279,16 +279,46 @@ class WordCloudRequest implements ArrayAccess
     public function listInvalidProperties()
     {
         $invalid_properties = array();
+        if ($this->container['text'] === null) {
+            $invalid_properties[] = "'text' can't be null";
+        }
+        if ($this->container['orientation'] === null) {
+            $invalid_properties[] = "'orientation' can't be null";
+        }
         $allowed_values = array("Horizontal", "MostlyHorizontal", "Vertical", "MostlyVertical", "HalfAndHalf", "EveryWhichWay");
         if (!in_array($this->container['orientation'], $allowed_values)) {
             $invalid_properties[] = "invalid value for 'orientation', must be one of #{allowed_values}.";
         }
 
+        if ($this->container['case_method'] === null) {
+            $invalid_properties[] = "'case_method' can't be null";
+        }
         $allowed_values = array("PreserveCase", "Lowercase", "Uppercase", "IntelligentCase");
         if (!in_array($this->container['case_method'], $allowed_values)) {
             $invalid_properties[] = "invalid value for 'case_method', must be one of #{allowed_values}.";
         }
 
+        if ($this->container['palette_name'] === null) {
+            $invalid_properties[] = "'palette_name' can't be null";
+        }
+        if ($this->container['maximum_word_count'] === null) {
+            $invalid_properties[] = "'maximum_word_count' can't be null";
+        }
+        if ($this->container['remove_common_words'] === null) {
+            $invalid_properties[] = "'remove_common_words' can't be null";
+        }
+        if ($this->container['font_name'] === null) {
+            $invalid_properties[] = "'font_name' can't be null";
+        }
+        if ($this->container['width'] === null) {
+            $invalid_properties[] = "'width' can't be null";
+        }
+        if ($this->container['height'] === null) {
+            $invalid_properties[] = "'height' can't be null";
+        }
+        if ($this->container['only_sentiment_words'] === null) {
+            $invalid_properties[] = "'only_sentiment_words' can't be null";
+        }
         if ($this->container['style'] === null) {
             $invalid_properties[] = "'style' can't be null";
         }
@@ -316,12 +346,42 @@ class WordCloudRequest implements ArrayAccess
      */
     public function valid()
     {
+        if ($this->container['text'] === null) {
+            return false;
+        }
+        if ($this->container['orientation'] === null) {
+            return false;
+        }
         $allowed_values = array("Horizontal", "MostlyHorizontal", "Vertical", "MostlyVertical", "HalfAndHalf", "EveryWhichWay");
         if (!in_array($this->container['orientation'], $allowed_values)) {
             return false;
         }
+        if ($this->container['case_method'] === null) {
+            return false;
+        }
         $allowed_values = array("PreserveCase", "Lowercase", "Uppercase", "IntelligentCase");
         if (!in_array($this->container['case_method'], $allowed_values)) {
+            return false;
+        }
+        if ($this->container['palette_name'] === null) {
+            return false;
+        }
+        if ($this->container['maximum_word_count'] === null) {
+            return false;
+        }
+        if ($this->container['remove_common_words'] === null) {
+            return false;
+        }
+        if ($this->container['font_name'] === null) {
+            return false;
+        }
+        if ($this->container['width'] === null) {
+            return false;
+        }
+        if ($this->container['height'] === null) {
+            return false;
+        }
+        if ($this->container['only_sentiment_words'] === null) {
             return false;
         }
         if ($this->container['style'] === null) {

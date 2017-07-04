@@ -145,6 +145,9 @@ class WordCloudResponse implements ArrayAccess
     public function listInvalidProperties()
     {
         $invalid_properties = array();
+        if ($this->container['url'] === null) {
+            $invalid_properties[] = "'url' can't be null";
+        }
         return $invalid_properties;
     }
 
@@ -156,6 +159,9 @@ class WordCloudResponse implements ArrayAccess
      */
     public function valid()
     {
+        if ($this->container['url'] === null) {
+            return false;
+        }
         return true;
     }
 

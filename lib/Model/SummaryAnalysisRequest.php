@@ -202,6 +202,9 @@ class SummaryAnalysisRequest implements ArrayAccess
         if ($this->container['text'] === null) {
             $invalid_properties[] = "'text' can't be null";
         }
+        if ($this->container['settings'] === null) {
+            $invalid_properties[] = "'settings' can't be null";
+        }
         if ($this->container['style'] === null) {
             $invalid_properties[] = "'style' can't be null";
         }
@@ -230,6 +233,9 @@ class SummaryAnalysisRequest implements ArrayAccess
     public function valid()
     {
         if ($this->container['text'] === null) {
+            return false;
+        }
+        if ($this->container['settings'] === null) {
             return false;
         }
         if ($this->container['style'] === null) {
