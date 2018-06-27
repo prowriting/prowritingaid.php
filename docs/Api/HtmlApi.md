@@ -4,11 +4,12 @@ All URIs are relative to *https://api.prowritingaid.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**htmlPost**](HtmlApi.md#htmlPost) | **POST** /api/html | 
+[**get**](HtmlApi.md#get) | **GET** /api/async/html/result/{taskId} | 
+[**post**](HtmlApi.md#post) | **POST** /api/async/html | 
 
 
-# **htmlPost**
-> \Swagger\Client\Model\HtmlAnalysisResponse htmlPost($request)
+# **get**
+> \Swagger\Client\Model\AsyncResponseHtmlAnalysisResponse get($task_id)
 
 
 
@@ -17,14 +18,24 @@ Method | HTTP request | Description
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new Swagger\Client\Api\HtmlApi();
-$request = new \Swagger\Client\Model\HtmlAnalysisRequest(); // \Swagger\Client\Model\HtmlAnalysisRequest | 
+// Configure API key authorization: licenseCode
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('licenseCode', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('licenseCode', 'Bearer');
+
+$apiInstance = new Swagger\Client\Api\HtmlApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$task_id = "task_id_example"; // string | 
 
 try {
-    $result = $api_instance->htmlPost($request);
+    $result = $apiInstance->get($task_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling HtmlApi->htmlPost: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling HtmlApi->get: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -33,20 +44,73 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**\Swagger\Client\Model\HtmlAnalysisRequest**](../Model/\Swagger\Client\Model\HtmlAnalysisRequest.md)|  |
+ **task_id** | **string**|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\HtmlAnalysisResponse**](../Model/HtmlAnalysisResponse.md)
+[**\Swagger\Client\Model\AsyncResponseHtmlAnalysisResponse**](../Model/AsyncResponseHtmlAnalysisResponse.md)
 
 ### Authorization
 
-No authorization required
+[licenseCode](../../README.md#licenseCode)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: application/json, text/json, application/xml, text/xml
+ - **Content-Type**: Not defined
+ - **Accept**: application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **post**
+> \Swagger\Client\Model\AsyncResponseHtmlAnalysisResponse post($requestp)
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: licenseCode
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('licenseCode', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('licenseCode', 'Bearer');
+
+$apiInstance = new Swagger\Client\Api\HtmlApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$requestp = new \Swagger\Client\Model\HtmlAnalysisRequest(); // \Swagger\Client\Model\HtmlAnalysisRequest | 
+
+try {
+    $result = $apiInstance->post($requestp);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling HtmlApi->post: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **requestp** | [**\Swagger\Client\Model\HtmlAnalysisRequest**](../Model/HtmlAnalysisRequest.md)|  |
+
+### Return type
+
+[**\Swagger\Client\Model\AsyncResponseHtmlAnalysisResponse**](../Model/AsyncResponseHtmlAnalysisResponse.md)
+
+### Authorization
+
+[licenseCode](../../README.md#licenseCode)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, text/json, application/x-www-form-urlencoded
+ - **Accept**: application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

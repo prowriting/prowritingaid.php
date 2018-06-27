@@ -15,6 +15,7 @@ Name | Type | Description | Notes
 **is_sub_tag** | **bool** | Identifies that this suggestion is a part of larger one | 
 **help_id** | **string** | TODO DOCS | [optional] 
 **id** | **string** | Suggestion&#39;s Id | [optional] 
+**invisible** | **bool** | Is tag invisible? | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

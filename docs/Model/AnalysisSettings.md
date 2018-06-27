@@ -3,19 +3,19 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**shortest_average_sentence_length** | **int** | &lt;remarks&gt;Default is 11&lt;/remarks&gt; | [optional] 
-**longest_average_sentence_length** | **int** | &lt;remarks&gt;Default is 18&lt;/remarks&gt; | [optional] 
-**longest_individual_sentence** | **int** | &lt;remarks&gt;Default is 30&lt;/remarks&gt; | [optional] 
-**highest_passive_index** | **int** | &lt;remarks&gt;Default is 25&lt;/remarks&gt; | [optional] 
-**max_glue_index** | **int** | &lt;remarks&gt;Default is 40&lt;/remarks&gt; | [optional] 
-**min_sentence_variety** | **int** | &lt;remarks&gt;Default is 3&lt;/remarks&gt; | [optional] 
-**highest_pronoun_percentage** | **double** | &lt;remarks&gt;Default is 15&lt;/remarks&gt; | [optional] 
-**lowest_pronoun_percentage** | **double** | &lt;remarks&gt;Default is 4&lt;/remarks&gt; | [optional] 
-**highest_academic_pronoun_percentage** | **double** | &lt;remarks&gt;Default is 2&lt;/remarks&gt; | [optional] 
-**highest_initial_pronoun_percentage** | **double** | &lt;remarks&gt;Default is 30&lt;/remarks&gt; | [optional] 
-**lowest_initial_pronoun_percentage** | **double** | &lt;remarks&gt;Default is 0&lt;/remarks&gt; | [optional] 
-**lowest_we_we_score** | **double** | &lt;remarks&gt;Default is .6&lt;/remarks&gt; | [optional] 
-**longest_average_paragraph_length** | **double** | &lt;remarks&gt;Default is 6&lt;/remarks&gt; | [optional] 
+**shortest_average_sentence_length** | **int** |  | [default to 11]
+**longest_average_sentence_length** | **int** |  | [default to 18]
+**longest_individual_sentence** | **int** |  | [default to 30]
+**highest_passive_index** | **int** |  | [default to 25]
+**max_glue_index** | **int** |  | [default to 40]
+**min_sentence_variety** | **int** |  | [default to 3]
+**highest_pronoun_percentage** | **double** |  | [default to 15.0]
+**lowest_pronoun_percentage** | **double** |  | [default to 4.0]
+**highest_academic_pronoun_percentage** | **double** |  | [default to 2.0]
+**highest_initial_pronoun_percentage** | **double** |  | [default to 30.0]
+**lowest_initial_pronoun_percentage** | **double** |  | [default to 0.0]
+**lowest_we_we_score** | **double** |  | [default to 0.6]
+**longest_average_paragraph_length** | **double** |  | [default to 6.0]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

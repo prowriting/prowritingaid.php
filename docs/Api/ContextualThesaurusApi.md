@@ -4,11 +4,12 @@ All URIs are relative to *https://api.prowritingaid.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**contextualThesaurusPost**](ContextualThesaurusApi.md#contextualThesaurusPost) | **POST** /api/contextualthesaurus | 
+[**get**](ContextualThesaurusApi.md#get) | **GET** /api/async/contextualthesaurus/result/{taskId} | 
+[**post**](ContextualThesaurusApi.md#post) | **POST** /api/async/contextualthesaurus | 
 
 
-# **contextualThesaurusPost**
-> \Swagger\Client\Model\ContextualThesaurusResponse contextualThesaurusPost($request)
+# **get**
+> \Swagger\Client\Model\AsyncResponseContextualThesaurusResponse get($task_id)
 
 
 
@@ -17,14 +18,24 @@ Method | HTTP request | Description
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new Swagger\Client\Api\ContextualThesaurusApi();
-$request = new \Swagger\Client\Model\ContextualThesaurusRequest(); // \Swagger\Client\Model\ContextualThesaurusRequest | 
+// Configure API key authorization: licenseCode
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('licenseCode', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('licenseCode', 'Bearer');
+
+$apiInstance = new Swagger\Client\Api\ContextualThesaurusApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$task_id = "task_id_example"; // string | 
 
 try {
-    $result = $api_instance->contextualThesaurusPost($request);
+    $result = $apiInstance->get($task_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ContextualThesaurusApi->contextualThesaurusPost: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling ContextualThesaurusApi->get: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -33,20 +44,73 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**\Swagger\Client\Model\ContextualThesaurusRequest**](../Model/\Swagger\Client\Model\ContextualThesaurusRequest.md)|  |
+ **task_id** | **string**|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\ContextualThesaurusResponse**](../Model/ContextualThesaurusResponse.md)
+[**\Swagger\Client\Model\AsyncResponseContextualThesaurusResponse**](../Model/AsyncResponseContextualThesaurusResponse.md)
 
 ### Authorization
 
-No authorization required
+[licenseCode](../../README.md#licenseCode)
 
 ### HTTP request headers
 
- - **Content-Type**: application/json, text/json, application/xml, text/xml, application/x-www-form-urlencoded
- - **Accept**: application/json, text/json, application/xml, text/xml
+ - **Content-Type**: Not defined
+ - **Accept**: application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **post**
+> \Swagger\Client\Model\AsyncResponseContextualThesaurusResponse post($requestp)
+
+
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure API key authorization: licenseCode
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('licenseCode', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('licenseCode', 'Bearer');
+
+$apiInstance = new Swagger\Client\Api\ContextualThesaurusApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$requestp = new \Swagger\Client\Model\ContextualThesaurusRequest(); // \Swagger\Client\Model\ContextualThesaurusRequest | 
+
+try {
+    $result = $apiInstance->post($requestp);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling ContextualThesaurusApi->post: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **requestp** | [**\Swagger\Client\Model\ContextualThesaurusRequest**](../Model/ContextualThesaurusRequest.md)|  |
+
+### Return type
+
+[**\Swagger\Client\Model\AsyncResponseContextualThesaurusResponse**](../Model/AsyncResponseContextualThesaurusResponse.md)
+
+### Authorization
+
+[licenseCode](../../README.md#licenseCode)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, text/json, application/x-www-form-urlencoded
+ - **Accept**: application/json, text/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 

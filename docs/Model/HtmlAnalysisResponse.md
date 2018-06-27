@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**html** | **string** | Result in form of html.  Contains tags with meta-information | 
+**html** | **string** | Result in form of html. Contains tags with meta-information | 
 **word_count** | **int** | Number of processed words | 
 **summaries** | [**\Swagger\Client\Model\AnalysisSummary[]**](AnalysisSummary.md) |  | 
 
