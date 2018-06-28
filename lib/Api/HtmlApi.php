@@ -90,7 +90,9 @@ class HtmlApi
     /**
      * Operation get
      *
-     * @param  string $task_id task_id (required)
+     * Tries to get the result of a request using the task id of the request
+     *
+     * @param  string $task_id  (required)
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -105,7 +107,9 @@ class HtmlApi
     /**
      * Operation getWithHttpInfo
      *
-     * @param  string $task_id (required)
+     * Tries to get the result of a request using the task id of the request
+     *
+     * @param  string $task_id  (required)
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -178,9 +182,9 @@ class HtmlApi
     /**
      * Operation getAsync
      *
-     * 
+     * Tries to get the result of a request using the task id of the request
      *
-     * @param  string $task_id (required)
+     * @param  string $task_id  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -198,9 +202,9 @@ class HtmlApi
     /**
      * Operation getAsyncWithHttpInfo
      *
-     * 
+     * Tries to get the result of a request using the task id of the request
      *
-     * @param  string $task_id (required)
+     * @param  string $task_id  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -250,7 +254,7 @@ class HtmlApi
     /**
      * Create request for operation 'get'
      *
-     * @param  string $task_id (required)
+     * @param  string $task_id  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -353,7 +357,9 @@ class HtmlApi
     /**
      * Operation post
      *
-     * @param  \Swagger\Client\Model\HtmlAnalysisRequest $requestp requestp (required)
+     * Analyses HTML and adds suggestion tags to it
+     *
+     * @param  \Swagger\Client\Model\HtmlAnalysisRequest $requestp  (required)
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -368,7 +374,9 @@ class HtmlApi
     /**
      * Operation postWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\HtmlAnalysisRequest $requestp (required)
+     * Analyses HTML and adds suggestion tags to it
+     *
+     * @param  \Swagger\Client\Model\HtmlAnalysisRequest $requestp  (required)
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -449,9 +457,9 @@ class HtmlApi
     /**
      * Operation postAsync
      *
-     * 
+     * Analyses HTML and adds suggestion tags to it
      *
-     * @param  \Swagger\Client\Model\HtmlAnalysisRequest $requestp (required)
+     * @param  \Swagger\Client\Model\HtmlAnalysisRequest $requestp  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -469,9 +477,9 @@ class HtmlApi
     /**
      * Operation postAsyncWithHttpInfo
      *
-     * 
+     * Analyses HTML and adds suggestion tags to it
      *
-     * @param  \Swagger\Client\Model\HtmlAnalysisRequest $requestp (required)
+     * @param  \Swagger\Client\Model\HtmlAnalysisRequest $requestp  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -521,7 +529,7 @@ class HtmlApi
     /**
      * Create request for operation 'post'
      *
-     * @param  \Swagger\Client\Model\HtmlAnalysisRequest $requestp (required)
+     * @param  \Swagger\Client\Model\HtmlAnalysisRequest $requestp  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

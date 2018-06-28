@@ -73,17 +73,17 @@ All URIs are relative to *https://api.prowritingaid.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*ContextualThesaurusApi* | [**get**](docs/Api/ContextualThesaurusApi.md#get) | **GET** /api/async/contextualthesaurus/result/{taskId} | 
-*ContextualThesaurusApi* | [**post**](docs/Api/ContextualThesaurusApi.md#post) | **POST** /api/async/contextualthesaurus | 
-*HtmlApi* | [**get**](docs/Api/HtmlApi.md#get) | **GET** /api/async/html/result/{taskId} | 
-*HtmlApi* | [**post**](docs/Api/HtmlApi.md#post) | **POST** /api/async/html | 
-*SummaryApi* | [**get**](docs/Api/SummaryApi.md#get) | **GET** /api/async/summary/result/{taskId} | 
-*SummaryApi* | [**post**](docs/Api/SummaryApi.md#post) | **POST** /api/async/summary | 
-*TextApi* | [**get**](docs/Api/TextApi.md#get) | **GET** /api/async/text/result/{taskId} | 
-*TextApi* | [**post**](docs/Api/TextApi.md#post) | **POST** /api/async/text | 
+*ContextualThesaurusApi* | [**get**](docs/Api/ContextualThesaurusApi.md#get) | **GET** /api/async/contextualthesaurus/result/{taskId} | Tries to get the result of a request using the task id of the request
+*ContextualThesaurusApi* | [**post**](docs/Api/ContextualThesaurusApi.md#post) | **POST** /api/async/contextualthesaurus | Analyses text and returns contextual thesaurus entries
+*HtmlApi* | [**get**](docs/Api/HtmlApi.md#get) | **GET** /api/async/html/result/{taskId} | Tries to get the result of a request using the task id of the request
+*HtmlApi* | [**post**](docs/Api/HtmlApi.md#post) | **POST** /api/async/html | Analyses HTML and adds suggestion tags to it
+*SummaryApi* | [**get**](docs/Api/SummaryApi.md#get) | **GET** /api/async/summary/result/{taskId} | Tries to get the result of a request using the task id of the request
+*SummaryApi* | [**post**](docs/Api/SummaryApi.md#post) | **POST** /api/async/summary | Gets the summary analysis of a document
+*TextApi* | [**get**](docs/Api/TextApi.md#get) | **GET** /api/async/text/result/{taskId} | Tries to get the result of a request using the task id of the request
+*TextApi* | [**post**](docs/Api/TextApi.md#post) | **POST** /api/async/text | Analyses html and adds suggestions tags to it
 *ThesaurusApi* | [**post**](docs/Api/ThesaurusApi.md#post) | **POST** /api/thesaurus | Returns the thesaurus entries for a specific word
-*WordCloudApi* | [**get**](docs/Api/WordCloudApi.md#get) | **GET** /api/async/wordcloud/result/{taskId} | 
-*WordCloudApi* | [**post**](docs/Api/WordCloudApi.md#post) | **POST** /api/async/wordcloud | 
+*WordCloudApi* | [**get**](docs/Api/WordCloudApi.md#get) | **GET** /api/async/wordcloud/result/{taskId} | Tries to get the result of a request using the task id of the request
+*WordCloudApi* | [**post**](docs/Api/WordCloudApi.md#post) | **POST** /api/async/wordcloud | Analyses text and returns a word cloud (as an image)
 
 
 ## Documentation For Models

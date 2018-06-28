@@ -4,14 +4,15 @@ All URIs are relative to *https://api.prowritingaid.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get**](ContextualThesaurusApi.md#get) | **GET** /api/async/contextualthesaurus/result/{taskId} | 
-[**post**](ContextualThesaurusApi.md#post) | **POST** /api/async/contextualthesaurus | 
+[**get**](ContextualThesaurusApi.md#get) | **GET** /api/async/contextualthesaurus/result/{taskId} | Tries to get the result of a request using the task id of the request
+[**post**](ContextualThesaurusApi.md#post) | **POST** /api/async/contextualthesaurus | Analyses text and returns contextual thesaurus entries
 
 
 # **get**
 > \Swagger\Client\Model\AsyncResponseContextualThesaurusResponse get($task_id)
 
 
+Tries to get the result of a request using the task id of the request
 
 ### Example
 ```php
@@ -65,6 +66,7 @@ Name | Type | Description  | Notes
 > \Swagger\Client\Model\AsyncResponseContextualThesaurusResponse post($requestp)
 
 
+Analyses text and returns contextual thesaurus entries
 
 ### Example
 ```php

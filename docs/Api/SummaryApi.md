@@ -4,14 +4,15 @@ All URIs are relative to *https://api.prowritingaid.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get**](SummaryApi.md#get) | **GET** /api/async/summary/result/{taskId} | 
-[**post**](SummaryApi.md#post) | **POST** /api/async/summary | 
+[**get**](SummaryApi.md#get) | **GET** /api/async/summary/result/{taskId} | Tries to get the result of a request using the task id of the request
+[**post**](SummaryApi.md#post) | **POST** /api/async/summary | Gets the summary analysis of a document
 
 
 # **get**
 > \Swagger\Client\Model\AsyncResponseSummaryAnalysisResponse get($task_id)
 
 
+Tries to get the result of a request using the task id of the request
 
 ### Example
 ```php
@@ -65,6 +66,7 @@ Name | Type | Description  | Notes
 > \Swagger\Client\Model\AsyncResponseSummaryAnalysisResponse post($requestp)
 
 
+Gets the summary analysis of a document
 
 ### Example
 ```php

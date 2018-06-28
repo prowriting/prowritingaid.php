@@ -90,7 +90,9 @@ class WordCloudApi
     /**
      * Operation get
      *
-     * @param  string $task_id task_id (required)
+     * Tries to get the result of a request using the task id of the request
+     *
+     * @param  string $task_id  (required)
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -105,7 +107,9 @@ class WordCloudApi
     /**
      * Operation getWithHttpInfo
      *
-     * @param  string $task_id (required)
+     * Tries to get the result of a request using the task id of the request
+     *
+     * @param  string $task_id  (required)
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -178,9 +182,9 @@ class WordCloudApi
     /**
      * Operation getAsync
      *
-     * 
+     * Tries to get the result of a request using the task id of the request
      *
-     * @param  string $task_id (required)
+     * @param  string $task_id  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -198,9 +202,9 @@ class WordCloudApi
     /**
      * Operation getAsyncWithHttpInfo
      *
-     * 
+     * Tries to get the result of a request using the task id of the request
      *
-     * @param  string $task_id (required)
+     * @param  string $task_id  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -250,7 +254,7 @@ class WordCloudApi
     /**
      * Create request for operation 'get'
      *
-     * @param  string $task_id (required)
+     * @param  string $task_id  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -348,7 +352,9 @@ class WordCloudApi
     /**
      * Operation post
      *
-     * @param  \Swagger\Client\Model\WordCloudRequest $requestp requestp (required)
+     * Analyses text and returns a word cloud (as an image)
+     *
+     * @param  \Swagger\Client\Model\WordCloudRequest $requestp  (required)
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -363,7 +369,9 @@ class WordCloudApi
     /**
      * Operation postWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\WordCloudRequest $requestp (required)
+     * Analyses text and returns a word cloud (as an image)
+     *
+     * @param  \Swagger\Client\Model\WordCloudRequest $requestp  (required)
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -444,9 +452,9 @@ class WordCloudApi
     /**
      * Operation postAsync
      *
-     * 
+     * Analyses text and returns a word cloud (as an image)
      *
-     * @param  \Swagger\Client\Model\WordCloudRequest $requestp (required)
+     * @param  \Swagger\Client\Model\WordCloudRequest $requestp  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -464,9 +472,9 @@ class WordCloudApi
     /**
      * Operation postAsyncWithHttpInfo
      *
-     * 
+     * Analyses text and returns a word cloud (as an image)
      *
-     * @param  \Swagger\Client\Model\WordCloudRequest $requestp (required)
+     * @param  \Swagger\Client\Model\WordCloudRequest $requestp  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -516,7 +524,7 @@ class WordCloudApi
     /**
      * Create request for operation 'post'
      *
-     * @param  \Swagger\Client\Model\WordCloudRequest $requestp (required)
+     * @param  \Swagger\Client\Model\WordCloudRequest $requestp  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

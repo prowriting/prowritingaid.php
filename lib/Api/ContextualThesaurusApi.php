@@ -90,7 +90,9 @@ class ContextualThesaurusApi
     /**
      * Operation get
      *
-     * @param  string $task_id task_id (required)
+     * Tries to get the result of a request using the task id of the request
+     *
+     * @param  string $task_id  (required)
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -105,7 +107,9 @@ class ContextualThesaurusApi
     /**
      * Operation getWithHttpInfo
      *
-     * @param  string $task_id (required)
+     * Tries to get the result of a request using the task id of the request
+     *
+     * @param  string $task_id  (required)
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
@@ -178,9 +182,9 @@ class ContextualThesaurusApi
     /**
      * Operation getAsync
      *
-     * 
+     * Tries to get the result of a request using the task id of the request
      *
-     * @param  string $task_id (required)
+     * @param  string $task_id  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -198,9 +202,9 @@ class ContextualThesaurusApi
     /**
      * Operation getAsyncWithHttpInfo
      *
-     * 
+     * Tries to get the result of a request using the task id of the request
      *
-     * @param  string $task_id (required)
+     * @param  string $task_id  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -250,7 +254,7 @@ class ContextualThesaurusApi
     /**
      * Create request for operation 'get'
      *
-     * @param  string $task_id (required)
+     * @param  string $task_id  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -353,6 +357,8 @@ class ContextualThesaurusApi
     /**
      * Operation post
      *
+     * Analyses text and returns contextual thesaurus entries
+     *
      * @param  \Swagger\Client\Model\ContextualThesaurusRequest $requestp requestp (required)
      *
      * @throws \Swagger\Client\ApiException on non-2xx response
@@ -367,6 +373,8 @@ class ContextualThesaurusApi
 
     /**
      * Operation postWithHttpInfo
+     *
+     * Analyses text and returns contextual thesaurus entries
      *
      * @param  \Swagger\Client\Model\ContextualThesaurusRequest $requestp (required)
      *
@@ -449,7 +457,7 @@ class ContextualThesaurusApi
     /**
      * Operation postAsync
      *
-     * 
+     * Analyses text and returns contextual thesaurus entries
      *
      * @param  \Swagger\Client\Model\ContextualThesaurusRequest $requestp (required)
      *
@@ -469,7 +477,7 @@ class ContextualThesaurusApi
     /**
      * Operation postAsyncWithHttpInfo
      *
-     * 
+     * Analyses text and returns contextual thesaurus entries
      *
      * @param  \Swagger\Client\Model\ContextualThesaurusRequest $requestp (required)
      *

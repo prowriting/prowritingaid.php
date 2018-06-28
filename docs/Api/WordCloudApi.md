@@ -4,14 +4,15 @@ All URIs are relative to *https://api.prowritingaid.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**get**](WordCloudApi.md#get) | **GET** /api/async/wordcloud/result/{taskId} | 
-[**post**](WordCloudApi.md#post) | **POST** /api/async/wordcloud | 
+[**get**](WordCloudApi.md#get) | **GET** /api/async/wordcloud/result/{taskId} | Tries to get the result of a request using the task id of the request
+[**post**](WordCloudApi.md#post) | **POST** /api/async/wordcloud | Analyses text and returns a word cloud (as an image)
 
 
 # **get**
 > \Swagger\Client\Model\AsyncResponseWordCloudResponse get($task_id)
 
 
+Tries to get the result of a request using the task id of the request
 
 ### Example
 ```php
@@ -59,6 +60,7 @@ No authorization required
 > \Swagger\Client\Model\AsyncResponseWordCloudResponse post($requestp)
 
 
+Analyses text and returns a word cloud (as an image)
 
 ### Example
 ```php
