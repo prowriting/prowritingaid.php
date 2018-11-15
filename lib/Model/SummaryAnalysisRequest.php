@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ProWritingAidSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ProWritingAidSDK\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \ProWritingAidSDK\ObjectSerializer;
 
 /**
  * SummaryAnalysisRequest Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ProWritingAidSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class SummaryAnalysisRequest implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'text' => 'string',
-        'settings' => '\Swagger\Client\Model\AnalysisSettings',
+        'settings' => '\ProWritingAidSDK\Model\AnalysisSettings',
         'style' => 'string',
         'language' => 'string'
     ];
@@ -183,6 +183,8 @@ class SummaryAnalysisRequest implements ModelInterface, ArrayAccess
     const STYLE_WEB = 'Web';
     const LANGUAGE_EN_US = 'en_US';
     const LANGUAGE_EN_UK = 'en_UK';
+    const LANGUAGE_EN_AU = 'en_AU';
+    const LANGUAGE_EN_CA = 'en_CA';
     const LANGUAGE_EN = 'en';
     const LANGUAGE_ES = 'es';
     
@@ -217,6 +219,8 @@ class SummaryAnalysisRequest implements ModelInterface, ArrayAccess
         return [
             self::LANGUAGE_EN_US,
             self::LANGUAGE_EN_UK,
+            self::LANGUAGE_EN_AU,
+            self::LANGUAGE_EN_CA,
             self::LANGUAGE_EN,
             self::LANGUAGE_ES,
         ];
@@ -323,7 +327,7 @@ class SummaryAnalysisRequest implements ModelInterface, ArrayAccess
     /**
      * Gets settings
      *
-     * @return \Swagger\Client\Model\AnalysisSettings
+     * @return \ProWritingAidSDK\Model\AnalysisSettings
      */
     public function getSettings()
     {
@@ -333,7 +337,7 @@ class SummaryAnalysisRequest implements ModelInterface, ArrayAccess
     /**
      * Sets settings
      *
-     * @param \Swagger\Client\Model\AnalysisSettings $settings Analysis settings
+     * @param \ProWritingAidSDK\Model\AnalysisSettings $settings Analysis settings
      *
      * @return $this
      */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ProWritingAidSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace Swagger\Client;
+namespace ProWritingAidSDK;
 
-use \Swagger\Client\Configuration;
-use \Swagger\Client\ApiException;
-use \Swagger\Client\ObjectSerializer;
+use \ProWritingAidSDK\Configuration;
+use \ProWritingAidSDK\ApiException;
+use \ProWritingAidSDK\ObjectSerializer;
 
 /**
  * HtmlApiTest Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ProWritingAidSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

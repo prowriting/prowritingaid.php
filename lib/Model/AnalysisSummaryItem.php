@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ProWritingAidSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ProWritingAidSDK\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \ProWritingAidSDK\ObjectSerializer;
 
 /**
  * AnalysisSummaryItem Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ProWritingAidSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,12 +58,12 @@ class AnalysisSummaryItem implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'text' => 'string',
-        'graph' => '\Swagger\Client\Model\AnalysisSummaryGraph',
+        'graph' => '\ProWritingAidSDK\Model\AnalysisSummaryGraph',
         'url' => 'string',
         'url_text' => 'string',
-        'sub_items' => '\Swagger\Client\Model\AnalysisSummarySubItem[]',
+        'sub_items' => '\ProWritingAidSDK\Model\AnalysisSummarySubItem[]',
         'is_positive' => 'string',
-        'category' => '\Swagger\Client\Model\SuggestionCategory',
+        'category' => '\ProWritingAidSDK\Model\SuggestionCategory',
         'category_name' => 'string',
         'num_issues' => 'int'
     ];
@@ -304,7 +304,7 @@ class AnalysisSummaryItem implements ModelInterface, ArrayAccess
     /**
      * Gets graph
      *
-     * @return \Swagger\Client\Model\AnalysisSummaryGraph
+     * @return \ProWritingAidSDK\Model\AnalysisSummaryGraph
      */
     public function getGraph()
     {
@@ -314,7 +314,7 @@ class AnalysisSummaryItem implements ModelInterface, ArrayAccess
     /**
      * Sets graph
      *
-     * @param \Swagger\Client\Model\AnalysisSummaryGraph $graph graph
+     * @param \ProWritingAidSDK\Model\AnalysisSummaryGraph $graph graph
      *
      * @return $this
      */
@@ -376,7 +376,7 @@ class AnalysisSummaryItem implements ModelInterface, ArrayAccess
     /**
      * Gets sub_items
      *
-     * @return \Swagger\Client\Model\AnalysisSummarySubItem[]
+     * @return \ProWritingAidSDK\Model\AnalysisSummarySubItem[]
      */
     public function getSubItems()
     {
@@ -386,7 +386,7 @@ class AnalysisSummaryItem implements ModelInterface, ArrayAccess
     /**
      * Sets sub_items
      *
-     * @param \Swagger\Client\Model\AnalysisSummarySubItem[] $sub_items sub_items
+     * @param \ProWritingAidSDK\Model\AnalysisSummarySubItem[] $sub_items sub_items
      *
      * @return $this
      */
@@ -433,7 +433,7 @@ class AnalysisSummaryItem implements ModelInterface, ArrayAccess
     /**
      * Gets category
      *
-     * @return \Swagger\Client\Model\SuggestionCategory
+     * @return \ProWritingAidSDK\Model\SuggestionCategory
      */
     public function getCategory()
     {
@@ -443,7 +443,7 @@ class AnalysisSummaryItem implements ModelInterface, ArrayAccess
     /**
      * Sets category
      *
-     * @param \Swagger\Client\Model\SuggestionCategory $category category
+     * @param \ProWritingAidSDK\Model\SuggestionCategory $category category
      *
      * @return $this
      */

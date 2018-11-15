@@ -1,4 +1,4 @@
-# Swagger\Client\ContextualThesaurusApi
+# ProWritingAidSDK\Api\ContextualThesaurusApi
 
 All URIs are relative to *https://api.prowritingaid.com*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **get**
-> \Swagger\Client\Model\AsyncResponseContextualThesaurusResponse get($task_id)
+> \ProWritingAidSDK\Model\AsyncResponseContextualThesaurusResponse get($task_id)
 
 
 Tries to get the result of a request using the task id of the request
@@ -20,11 +20,11 @@ Tries to get the result of a request using the task id of the request
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: licenseCode
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('licenseCode', 'YOUR_API_KEY');
+$config = ProWritingAidSDK\Configuration::getDefaultConfiguration()->setApiKey('licenseCode', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('licenseCode', 'Bearer');
+// $config = ProWritingAidSDK\Configuration::getDefaultConfiguration()->setApiKeyPrefix('licenseCode', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ContextualThesaurusApi(
+$apiInstance = new ProWritingAidSDK\Api\ContextualThesaurusApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\AsyncResponseContextualThesaurusResponse**](../Model/AsyncResponseContextualThesaurusResponse.md)
+[**\ProWritingAidSDK\Model\AsyncResponseContextualThesaurusResponse**](../Model/AsyncResponseContextualThesaurusResponse.md)
 
 ### Authorization
 
@@ -63,7 +63,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **post**
-> \Swagger\Client\Model\AsyncResponseContextualThesaurusResponse post($requestp)
+> \ProWritingAidSDK\Model\AsyncResponseContextualThesaurusResponse post($requestp)
 
 
 Analyses text and returns contextual thesaurus entries
@@ -74,17 +74,17 @@ Analyses text and returns contextual thesaurus entries
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: licenseCode
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('licenseCode', 'YOUR_API_KEY');
+$config = ProWritingAidSDK\Configuration::getDefaultConfiguration()->setApiKey('licenseCode', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('licenseCode', 'Bearer');
+// $config = ProWritingAidSDK\Configuration::getDefaultConfiguration()->setApiKeyPrefix('licenseCode', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ContextualThesaurusApi(
+$apiInstance = new ProWritingAidSDK\Api\ContextualThesaurusApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$requestp = new \Swagger\Client\Model\ContextualThesaurusRequest(); // \Swagger\Client\Model\ContextualThesaurusRequest | 
+$requestp = new \ProWritingAidSDK\Model\ContextualThesaurusRequest(); // \ProWritingAidSDK\Model\ContextualThesaurusRequest | 
 
 try {
     $result = $apiInstance->post($requestp);
@@ -99,11 +99,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **requestp** | [**\Swagger\Client\Model\ContextualThesaurusRequest**](../Model/ContextualThesaurusRequest.md)|  |
+ **requestp** | [**\ProWritingAidSDK\Model\ContextualThesaurusRequest**](../Model/ContextualThesaurusRequest.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\AsyncResponseContextualThesaurusResponse**](../Model/AsyncResponseContextualThesaurusResponse.md)
+[**\ProWritingAidSDK\Model\AsyncResponseContextualThesaurusResponse**](../Model/AsyncResponseContextualThesaurusResponse.md)
 
 ### Authorization
 

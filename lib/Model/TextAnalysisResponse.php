@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ProWritingAidSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ProWritingAidSDK\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \ProWritingAidSDK\ObjectSerializer;
 
 /**
  * TextAnalysisResponse Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ProWritingAidSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,9 +57,9 @@ class TextAnalysisResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'tags' => '\Swagger\Client\Model\DocTag[]',
+        'tags' => '\ProWritingAidSDK\Model\DocTag[]',
         'word_count' => 'int',
-        'summaries' => '\Swagger\Client\Model\AnalysisSummary[]'
+        'summaries' => '\ProWritingAidSDK\Model\AnalysisSummary[]'
     ];
 
     /**
@@ -228,7 +228,7 @@ class TextAnalysisResponse implements ModelInterface, ArrayAccess
     /**
      * Gets tags
      *
-     * @return \Swagger\Client\Model\DocTag[]
+     * @return \ProWritingAidSDK\Model\DocTag[]
      */
     public function getTags()
     {
@@ -238,7 +238,7 @@ class TextAnalysisResponse implements ModelInterface, ArrayAccess
     /**
      * Sets tags
      *
-     * @param \Swagger\Client\Model\DocTag[] $tags List of found suggestions
+     * @param \ProWritingAidSDK\Model\DocTag[] $tags List of found suggestions
      *
      * @return $this
      */
@@ -276,7 +276,7 @@ class TextAnalysisResponse implements ModelInterface, ArrayAccess
     /**
      * Gets summaries
      *
-     * @return \Swagger\Client\Model\AnalysisSummary[]
+     * @return \ProWritingAidSDK\Model\AnalysisSummary[]
      */
     public function getSummaries()
     {
@@ -286,7 +286,7 @@ class TextAnalysisResponse implements ModelInterface, ArrayAccess
     /**
      * Sets summaries
      *
-     * @param \Swagger\Client\Model\AnalysisSummary[] $summaries 
+     * @param \ProWritingAidSDK\Model\AnalysisSummary[] $summaries 
      *
      * @return $this
      */

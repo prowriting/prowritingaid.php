@@ -1,4 +1,4 @@
-# Swagger\Client\WordCloudApi
+# ProWritingAidSDK\Api\WordCloudApi
 
 All URIs are relative to *https://api.prowritingaid.com*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **get**
-> \Swagger\Client\Model\AsyncResponseWordCloudResponse get($task_id)
+> \ProWritingAidSDK\Model\AsyncResponseWordCloudResponse get($task_id)
 
 
 Tries to get the result of a request using the task id of the request
@@ -19,7 +19,7 @@ Tries to get the result of a request using the task id of the request
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\WordCloudApi(
+$apiInstance = new ProWritingAidSDK\Api\WordCloudApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -43,7 +43,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\AsyncResponseWordCloudResponse**](../Model/AsyncResponseWordCloudResponse.md)
+[**\ProWritingAidSDK\Model\AsyncResponseWordCloudResponse**](../Model/AsyncResponseWordCloudResponse.md)
 
 ### Authorization
 
@@ -57,7 +57,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **post**
-> \Swagger\Client\Model\AsyncResponseWordCloudResponse post($requestp)
+> \ProWritingAidSDK\Model\AsyncResponseWordCloudResponse post($requestp)
 
 
 Analyses text and returns a word cloud (as an image)
@@ -67,12 +67,12 @@ Analyses text and returns a word cloud (as an image)
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\WordCloudApi(
+$apiInstance = new ProWritingAidSDK\Api\WordCloudApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$requestp = new \Swagger\Client\Model\WordCloudRequest(); // \Swagger\Client\Model\WordCloudRequest | 
+$requestp = new \ProWritingAidSDK\Model\WordCloudRequest(); // \ProWritingAidSDK\Model\WordCloudRequest | 
 
 try {
     $result = $apiInstance->post($requestp);
@@ -87,11 +87,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **requestp** | [**\Swagger\Client\Model\WordCloudRequest**](../Model/WordCloudRequest.md)|  |
+ **requestp** | [**\ProWritingAidSDK\Model\WordCloudRequest**](../Model/WordCloudRequest.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\AsyncResponseWordCloudResponse**](../Model/AsyncResponseWordCloudResponse.md)
+[**\ProWritingAidSDK\Model\AsyncResponseWordCloudResponse**](../Model/AsyncResponseWordCloudResponse.md)
 
 ### Authorization
 

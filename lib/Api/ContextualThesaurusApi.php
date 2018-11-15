@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ProWritingAidSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace ProWritingAidSDK\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use ProWritingAidSDK\ApiException;
+use ProWritingAidSDK\Configuration;
+use ProWritingAidSDK\HeaderSelector;
+use ProWritingAidSDK\ObjectSerializer;
 
 /**
  * ContextualThesaurusApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ProWritingAidSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class ContextualThesaurusApi
      *
      * @param  string $task_id  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ProWritingAidSDK\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\AsyncResponseContextualThesaurusResponse
+     * @return \ProWritingAidSDK\Model\AsyncResponseContextualThesaurusResponse
      */
     public function get($task_id)
     {
@@ -111,13 +111,13 @@ class ContextualThesaurusApi
      *
      * @param  string $task_id  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ProWritingAidSDK\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\AsyncResponseContextualThesaurusResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ProWritingAidSDK\Model\AsyncResponseContextualThesaurusResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getWithHttpInfo($task_id)
     {
-        $returnType = '\Swagger\Client\Model\AsyncResponseContextualThesaurusResponse';
+        $returnType = '\ProWritingAidSDK\Model\AsyncResponseContextualThesaurusResponse';
         $request = $this->getRequest($task_id);
 
         try {
@@ -169,7 +169,7 @@ class ContextualThesaurusApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\AsyncResponseContextualThesaurusResponse',
+                        '\ProWritingAidSDK\Model\AsyncResponseContextualThesaurusResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -211,7 +211,7 @@ class ContextualThesaurusApi
      */
     public function getAsyncWithHttpInfo($task_id)
     {
-        $returnType = '\Swagger\Client\Model\AsyncResponseContextualThesaurusResponse';
+        $returnType = '\ProWritingAidSDK\Model\AsyncResponseContextualThesaurusResponse';
         $request = $this->getRequest($task_id);
 
         return $this->client
@@ -359,11 +359,11 @@ class ContextualThesaurusApi
      *
      * Analyses text and returns contextual thesaurus entries
      *
-     * @param  \Swagger\Client\Model\ContextualThesaurusRequest $requestp requestp (required)
+     * @param  \ProWritingAidSDK\Model\ContextualThesaurusRequest $requestp requestp (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ProWritingAidSDK\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\AsyncResponseContextualThesaurusResponse
+     * @return \ProWritingAidSDK\Model\AsyncResponseContextualThesaurusResponse
      */
     public function post($requestp)
     {
@@ -376,15 +376,15 @@ class ContextualThesaurusApi
      *
      * Analyses text and returns contextual thesaurus entries
      *
-     * @param  \Swagger\Client\Model\ContextualThesaurusRequest $requestp (required)
+     * @param  \ProWritingAidSDK\Model\ContextualThesaurusRequest $requestp (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ProWritingAidSDK\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\AsyncResponseContextualThesaurusResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ProWritingAidSDK\Model\AsyncResponseContextualThesaurusResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function postWithHttpInfo($requestp)
     {
-        $returnType = '\Swagger\Client\Model\AsyncResponseContextualThesaurusResponse';
+        $returnType = '\ProWritingAidSDK\Model\AsyncResponseContextualThesaurusResponse';
         $request = $this->postRequest($requestp);
 
         try {
@@ -436,7 +436,7 @@ class ContextualThesaurusApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\AsyncResponseContextualThesaurusResponse',
+                        '\ProWritingAidSDK\Model\AsyncResponseContextualThesaurusResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -444,7 +444,7 @@ class ContextualThesaurusApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\AsyncResponseContextualThesaurusResponse',
+                        '\ProWritingAidSDK\Model\AsyncResponseContextualThesaurusResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -459,7 +459,7 @@ class ContextualThesaurusApi
      *
      * Analyses text and returns contextual thesaurus entries
      *
-     * @param  \Swagger\Client\Model\ContextualThesaurusRequest $requestp (required)
+     * @param  \ProWritingAidSDK\Model\ContextualThesaurusRequest $requestp (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -479,14 +479,14 @@ class ContextualThesaurusApi
      *
      * Analyses text and returns contextual thesaurus entries
      *
-     * @param  \Swagger\Client\Model\ContextualThesaurusRequest $requestp (required)
+     * @param  \ProWritingAidSDK\Model\ContextualThesaurusRequest $requestp (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postAsyncWithHttpInfo($requestp)
     {
-        $returnType = '\Swagger\Client\Model\AsyncResponseContextualThesaurusResponse';
+        $returnType = '\ProWritingAidSDK\Model\AsyncResponseContextualThesaurusResponse';
         $request = $this->postRequest($requestp);
 
         return $this->client
@@ -529,7 +529,7 @@ class ContextualThesaurusApi
     /**
      * Create request for operation 'post'
      *
-     * @param  \Swagger\Client\Model\ContextualThesaurusRequest $requestp (required)
+     * @param  \ProWritingAidSDK\Model\ContextualThesaurusRequest $requestp (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

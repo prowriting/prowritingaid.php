@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ProWritingAidSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ProWritingAidSDK\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \ProWritingAidSDK\ObjectSerializer;
 
 /**
  * AsyncResponseWordCloudResponse Class Doc Comment
  *
  * @category Class
  * @description Asynchronous request
- * @package  Swagger\Client
+ * @package  ProWritingAidSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class AsyncResponseWordCloudResponse implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'task_id' => 'string',
-        'result' => '\Swagger\Client\Model\WordCloudResponse'
+        'result' => '\ProWritingAidSDK\Model\WordCloudResponse'
     ];
 
     /**
@@ -238,7 +238,7 @@ class AsyncResponseWordCloudResponse implements ModelInterface, ArrayAccess
     /**
      * Gets result
      *
-     * @return \Swagger\Client\Model\WordCloudResponse
+     * @return \ProWritingAidSDK\Model\WordCloudResponse
      */
     public function getResult()
     {
@@ -248,7 +248,7 @@ class AsyncResponseWordCloudResponse implements ModelInterface, ArrayAccess
     /**
      * Sets result
      *
-     * @param \Swagger\Client\Model\WordCloudResponse $result Actual response
+     * @param \ProWritingAidSDK\Model\WordCloudResponse $result Actual response
      *
      * @return $this
      */

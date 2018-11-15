@@ -1,4 +1,4 @@
-# Swagger\Client\ThesaurusApi
+# ProWritingAidSDK\Api\ThesaurusApi
 
 All URIs are relative to *https://api.prowritingaid.com*
 
@@ -8,7 +8,8 @@ Method | HTTP request | Description
 
 
 # **post**
-> \Swagger\Client\Model\ThesaurusResponse post($request)
+> \ProWritingAidSDK\Model\ThesaurusResponse post($request)
+
 
 Returns the thesaurus entries for a specific word
 
@@ -18,17 +19,17 @@ Returns the thesaurus entries for a specific word
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: licenseCode
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKey('licenseCode', 'YOUR_API_KEY');
+$config = ProWritingAidSDK\Configuration::getDefaultConfiguration()->setApiKey('licenseCode', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = Swagger\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('licenseCode', 'Bearer');
+// $config = ProWritingAidSDK\Configuration::getDefaultConfiguration()->setApiKeyPrefix('licenseCode', 'Bearer');
 
-$apiInstance = new Swagger\Client\Api\ThesaurusApi(
+$apiInstance = new ProWritingAidSDK\Api\ThesaurusApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
-$request = new \Swagger\Client\Model\ThesaurusRequest(); // \Swagger\Client\Model\ThesaurusRequest | 
+$request = new \ProWritingAidSDK\Model\ThesaurusRequest(); // \ProWritingAidSDK\Model\ThesaurusRequest | 
 
 try {
     $result = $apiInstance->post($request);
@@ -43,11 +44,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **request** | [**\Swagger\Client\Model\ThesaurusRequest**](../Model/ThesaurusRequest.md)|  |
+ **request** | [**\ProWritingAidSDK\Model\ThesaurusRequest**](../Model/ThesaurusRequest.md)|  |
 
 ### Return type
 
-[**\Swagger\Client\Model\ThesaurusResponse**](../Model/ThesaurusResponse.md)
+[**\ProWritingAidSDK\Model\ThesaurusResponse**](../Model/ThesaurusResponse.md)
 
 ### Authorization
 

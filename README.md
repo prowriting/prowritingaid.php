@@ -15,14 +15,15 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
 
 ```
 {
+  "minimum-stability": "dev",
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com/prowriting/prowriting.php.git"
+      "url": "https://github.com/prowriting/prowritingaid.php.git"
     }
   ],
   "require": {
-    "prowriting/prowriting.php": "*@dev"
+    "prowriting/prowritingaid.php": "*"
   }
 }
 ```
@@ -37,15 +38,6 @@ Download the files and include `autoload.php`:
     require_once('/path/to/SwaggerClient-php/autoload.php');
 ```
 
-## Tests
-
-To run the unit tests:
-
-```
-composer install
-./vendor/bin/phpunit lib/Tests
-```
-
 ## Getting Started
 
 Please follow the [installation procedure](#installation--usage) and then run the following:
@@ -54,12 +46,19 @@ Please follow the [installation procedure](#installation--usage) and then run th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$api_instance = new Swagger\Client\Api\AsyncContextualThesaurusApi();
-$request = new \Swagger\Client\Model\ContextualThesaurusRequest(); // \Swagger\Client\Model\ContextualThesaurusRequest | 
+$configuration = new ProWritingAidSDK\Configuration();
+$configuration->setHost('https://api.prowritingaid.com');
+$configuration->setApiKey('licenseCode', 'YOUR_LICENSE_CODE');
+$api_instance = new ProWritingAidSDK\Api\ContextualThesaurusApi(null, $configuration);
+
+$data['context'] = 'This is a sample text in English to test the sdk thesaurus. This is a second paragraph in the document. This  is a new line.';
+$data['context_start'] = 17;
+$data['context_end'] = 20;
+$request = new \ProWritingAidSDK\Model\ContextualThesaurusRequest($data);
 
 try {
-    $result = $api_instance->asyncContextualThesaurusPost($request);
-    print_r($result);
+    $result = $api_instance->post($request);
+    echo $result;
 } catch (Exception $e) {
     echo 'Exception when calling AsyncContextualThesaurusApi->asyncContextualThesaurusPost: ', $e->getMessage(), PHP_EOL;
 }
@@ -80,7 +79,7 @@ Class | Method | HTTP request | Description
 *SummaryApi* | [**get**](docs/Api/SummaryApi.md#get) | **GET** /api/async/summary/result/{taskId} | Tries to get the result of a request using the task id of the request
 *SummaryApi* | [**post**](docs/Api/SummaryApi.md#post) | **POST** /api/async/summary | Gets the summary analysis of a document
 *TextApi* | [**get**](docs/Api/TextApi.md#get) | **GET** /api/async/text/result/{taskId} | Tries to get the result of a request using the task id of the request
-*TextApi* | [**post**](docs/Api/TextApi.md#post) | **POST** /api/async/text | Analyses html and adds suggestions tags to it
+*TextApi* | [**post**](docs/Api/TextApi.md#post) | **POST** /api/async/text | Analyses text and returns tags for it
 *ThesaurusApi* | [**post**](docs/Api/ThesaurusApi.md#post) | **POST** /api/thesaurus | Returns the thesaurus entries for a specific word
 *WordCloudApi* | [**get**](docs/Api/WordCloudApi.md#get) | **GET** /api/async/wordcloud/result/{taskId} | Tries to get the result of a request using the task id of the request
 *WordCloudApi* | [**post**](docs/Api/WordCloudApi.md#post) | **POST** /api/async/wordcloud | Analyses text and returns a word cloud (as an image)

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ProWritingAidSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ProWritingAidSDK\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \ProWritingAidSDK\ObjectSerializer;
 
 /**
  * AsyncResponseHtmlAnalysisResponse Class Doc Comment
  *
  * @category Class
  * @description Asynchronous request
- * @package  Swagger\Client
+ * @package  ProWritingAidSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class AsyncResponseHtmlAnalysisResponse implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'task_id' => 'string',
-        'result' => '\Swagger\Client\Model\HtmlAnalysisResponse'
+        'result' => '\ProWritingAidSDK\Model\HtmlAnalysisResponse'
     ];
 
     /**
@@ -238,7 +238,7 @@ class AsyncResponseHtmlAnalysisResponse implements ModelInterface, ArrayAccess
     /**
      * Gets result
      *
-     * @return \Swagger\Client\Model\HtmlAnalysisResponse
+     * @return \ProWritingAidSDK\Model\HtmlAnalysisResponse
      */
     public function getResult()
     {
@@ -248,7 +248,7 @@ class AsyncResponseHtmlAnalysisResponse implements ModelInterface, ArrayAccess
     /**
      * Sets result
      *
-     * @param \Swagger\Client\Model\HtmlAnalysisResponse $result Actual response
+     * @param \ProWritingAidSDK\Model\HtmlAnalysisResponse $result Actual response
      *
      * @return $this
      */

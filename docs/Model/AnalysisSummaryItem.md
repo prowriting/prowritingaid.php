@@ -4,12 +4,12 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **text** | **string** |  | [optional] 
-**graph** | [**\Swagger\Client\Model\AnalysisSummaryGraph**](AnalysisSummaryGraph.md) |  | [optional] 
+**graph** | [**\ProWritingAidSDK\Model\AnalysisSummaryGraph**](AnalysisSummaryGraph.md) |  | [optional] 
 **url** | **string** |  | [optional] 
 **url_text** | **string** |  | [optional] 
-**sub_items** | [**\Swagger\Client\Model\AnalysisSummarySubItem[]**](AnalysisSummarySubItem.md) |  | [optional] 
+**sub_items** | [**\ProWritingAidSDK\Model\AnalysisSummarySubItem[]**](AnalysisSummarySubItem.md) |  | [optional] 
 **is_positive** | **string** |  | [optional] 
-**category** | [**\Swagger\Client\Model\SuggestionCategory**](SuggestionCategory.md) |  | [optional] 
+**category** | [**\ProWritingAidSDK\Model\SuggestionCategory**](SuggestionCategory.md) |  | [optional] 
 **category_name** | **string** |  | [optional] 
 **num_issues** | **int** |  | [optional] 
 

@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **text** | **string** | Text to be analyzed | 
-**settings** | [**\Swagger\Client\Model\AnalysisSettings**](AnalysisSettings.md) | Analysis settings | 
+**settings** | [**\ProWritingAidSDK\Model\AnalysisSettings**](AnalysisSettings.md) | Analysis settings | 
 **style** | **string** | Document&#39;s writing style | [default to 'General']
 **language** | **string** | Document&#39;s language. Set correct UK/US language to get region-specific suggestions | [default to 'en']
 

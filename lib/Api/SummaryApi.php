@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ProWritingAidSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace ProWritingAidSDK\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use ProWritingAidSDK\ApiException;
+use ProWritingAidSDK\Configuration;
+use ProWritingAidSDK\HeaderSelector;
+use ProWritingAidSDK\ObjectSerializer;
 
 /**
  * SummaryApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ProWritingAidSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -94,9 +94,9 @@ class SummaryApi
      *
      * @param  string $task_id  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ProWritingAidSDK\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\AsyncResponseSummaryAnalysisResponse
+     * @return \ProWritingAidSDK\Model\AsyncResponseSummaryAnalysisResponse
      */
     public function get($task_id)
     {
@@ -111,13 +111,13 @@ class SummaryApi
      *
      * @param  string $task_id  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ProWritingAidSDK\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\AsyncResponseSummaryAnalysisResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ProWritingAidSDK\Model\AsyncResponseSummaryAnalysisResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getWithHttpInfo($task_id)
     {
-        $returnType = '\Swagger\Client\Model\AsyncResponseSummaryAnalysisResponse';
+        $returnType = '\ProWritingAidSDK\Model\AsyncResponseSummaryAnalysisResponse';
         $request = $this->getRequest($task_id);
 
         try {
@@ -169,7 +169,7 @@ class SummaryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\AsyncResponseSummaryAnalysisResponse',
+                        '\ProWritingAidSDK\Model\AsyncResponseSummaryAnalysisResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -211,7 +211,7 @@ class SummaryApi
      */
     public function getAsyncWithHttpInfo($task_id)
     {
-        $returnType = '\Swagger\Client\Model\AsyncResponseSummaryAnalysisResponse';
+        $returnType = '\ProWritingAidSDK\Model\AsyncResponseSummaryAnalysisResponse';
         $request = $this->getRequest($task_id);
 
         return $this->client
@@ -359,11 +359,11 @@ class SummaryApi
      *
      * Gets the summary analysis of a document
      *
-     * @param  \Swagger\Client\Model\SummaryAnalysisRequest $requestp  (required)
+     * @param  \ProWritingAidSDK\Model\SummaryAnalysisRequest $requestp  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ProWritingAidSDK\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\AsyncResponseSummaryAnalysisResponse
+     * @return \ProWritingAidSDK\Model\AsyncResponseSummaryAnalysisResponse
      */
     public function post($requestp)
     {
@@ -376,15 +376,15 @@ class SummaryApi
      *
      * Gets the summary analysis of a document
      *
-     * @param  \Swagger\Client\Model\SummaryAnalysisRequest $requestp  (required)
+     * @param  \ProWritingAidSDK\Model\SummaryAnalysisRequest $requestp  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ProWritingAidSDK\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\AsyncResponseSummaryAnalysisResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ProWritingAidSDK\Model\AsyncResponseSummaryAnalysisResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function postWithHttpInfo($requestp)
     {
-        $returnType = '\Swagger\Client\Model\AsyncResponseSummaryAnalysisResponse';
+        $returnType = '\ProWritingAidSDK\Model\AsyncResponseSummaryAnalysisResponse';
         $request = $this->postRequest($requestp);
 
         try {
@@ -436,7 +436,7 @@ class SummaryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\AsyncResponseSummaryAnalysisResponse',
+                        '\ProWritingAidSDK\Model\AsyncResponseSummaryAnalysisResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -444,7 +444,7 @@ class SummaryApi
                 case 201:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\AsyncResponseSummaryAnalysisResponse',
+                        '\ProWritingAidSDK\Model\AsyncResponseSummaryAnalysisResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -459,7 +459,7 @@ class SummaryApi
      *
      * Gets the summary analysis of a document
      *
-     * @param  \Swagger\Client\Model\SummaryAnalysisRequest $requestp  (required)
+     * @param  \ProWritingAidSDK\Model\SummaryAnalysisRequest $requestp  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -479,14 +479,14 @@ class SummaryApi
      *
      * Gets the summary analysis of a document
      *
-     * @param  \Swagger\Client\Model\SummaryAnalysisRequest $requestp  (required)
+     * @param  \ProWritingAidSDK\Model\SummaryAnalysisRequest $requestp  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postAsyncWithHttpInfo($requestp)
     {
-        $returnType = '\Swagger\Client\Model\AsyncResponseSummaryAnalysisResponse';
+        $returnType = '\ProWritingAidSDK\Model\AsyncResponseSummaryAnalysisResponse';
         $request = $this->postRequest($requestp);
 
         return $this->client
@@ -529,7 +529,7 @@ class SummaryApi
     /**
      * Create request for operation 'post'
      *
-     * @param  \Swagger\Client\Model\SummaryAnalysisRequest $requestp  (required)
+     * @param  \ProWritingAidSDK\Model\SummaryAnalysisRequest $requestp  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

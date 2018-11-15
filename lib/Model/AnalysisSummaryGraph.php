@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ProWritingAidSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ProWritingAidSDK\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \ProWritingAidSDK\ObjectSerializer;
 
 /**
  * AnalysisSummaryGraph Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ProWritingAidSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class AnalysisSummaryGraph implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'name' => 'string',
-        'items' => '\Swagger\Client\Model\AnalysisSummaryGraphItem[]'
+        'items' => '\ProWritingAidSDK\Model\AnalysisSummaryGraphItem[]'
     ];
 
     /**
@@ -237,7 +237,7 @@ class AnalysisSummaryGraph implements ModelInterface, ArrayAccess
     /**
      * Gets items
      *
-     * @return \Swagger\Client\Model\AnalysisSummaryGraphItem[]
+     * @return \ProWritingAidSDK\Model\AnalysisSummaryGraphItem[]
      */
     public function getItems()
     {
@@ -247,7 +247,7 @@ class AnalysisSummaryGraph implements ModelInterface, ArrayAccess
     /**
      * Sets items
      *
-     * @param \Swagger\Client\Model\AnalysisSummaryGraphItem[] $items items
+     * @param \ProWritingAidSDK\Model\AnalysisSummaryGraphItem[] $items items
      *
      * @return $this
      */

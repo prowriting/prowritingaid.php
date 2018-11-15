@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ProWritingAidSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace ProWritingAidSDK\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use ProWritingAidSDK\ApiException;
+use ProWritingAidSDK\Configuration;
+use ProWritingAidSDK\HeaderSelector;
+use ProWritingAidSDK\ObjectSerializer;
 
 /**
  * ThesaurusApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ProWritingAidSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,11 +92,11 @@ class ThesaurusApi
      *
      * Returns the thesaurus entries for a specific word
      *
-     * @param  \Swagger\Client\Model\ThesaurusRequest $request  (required)
+     * @param  \ProWritingAidSDK\Model\ThesaurusRequest $request  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ProWritingAidSDK\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\ThesaurusResponse
+     * @return \ProWritingAidSDK\Model\ThesaurusResponse
      */
     public function post($request)
     {
@@ -109,15 +109,15 @@ class ThesaurusApi
      *
      * Returns the thesaurus entries for a specific word
      *
-     * @param  \Swagger\Client\Model\ThesaurusRequest $request  (required)
+     * @param  \ProWritingAidSDK\Model\ThesaurusRequest $request  (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \ProWritingAidSDK\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\ThesaurusResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \ProWritingAidSDK\Model\ThesaurusResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function postWithHttpInfo($request)
     {
-        $returnType = '\Swagger\Client\Model\ThesaurusResponse';
+        $returnType = '\ProWritingAidSDK\Model\ThesaurusResponse';
         $request = $this->postRequest($request);
 
         try {
@@ -169,7 +169,7 @@ class ThesaurusApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\ThesaurusResponse',
+                        '\ProWritingAidSDK\Model\ThesaurusResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -184,7 +184,7 @@ class ThesaurusApi
      *
      * Returns the thesaurus entries for a specific word
      *
-     * @param  \Swagger\Client\Model\ThesaurusRequest $request  (required)
+     * @param  \ProWritingAidSDK\Model\ThesaurusRequest $request  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -204,14 +204,14 @@ class ThesaurusApi
      *
      * Returns the thesaurus entries for a specific word
      *
-     * @param  \Swagger\Client\Model\ThesaurusRequest $request  (required)
+     * @param  \ProWritingAidSDK\Model\ThesaurusRequest $request  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postAsyncWithHttpInfo($request)
     {
-        $returnType = '\Swagger\Client\Model\ThesaurusResponse';
+        $returnType = '\ProWritingAidSDK\Model\ThesaurusResponse';
         $request = $this->postRequest($request);
 
         return $this->client
@@ -254,7 +254,7 @@ class ThesaurusApi
     /**
      * Create request for operation 'post'
      *
-     * @param  \Swagger\Client\Model\ThesaurusRequest $request  (required)
+     * @param  \ProWritingAidSDK\Model\ThesaurusRequest $request  (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

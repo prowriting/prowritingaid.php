@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ProWritingAidSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ProWritingAidSDK\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \ProWritingAidSDK\ObjectSerializer;
 
 /**
  * ThesaurusResponse Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ProWritingAidSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class ThesaurusResponse implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'word' => 'string',
-        'meanings' => '\Swagger\Client\Model\EntryMeaning[]'
+        'meanings' => '\ProWritingAidSDK\Model\EntryMeaning[]'
     ];
 
     /**
@@ -237,7 +237,7 @@ class ThesaurusResponse implements ModelInterface, ArrayAccess
     /**
      * Gets meanings
      *
-     * @return \Swagger\Client\Model\EntryMeaning[]
+     * @return \ProWritingAidSDK\Model\EntryMeaning[]
      */
     public function getMeanings()
     {
@@ -247,7 +247,7 @@ class ThesaurusResponse implements ModelInterface, ArrayAccess
     /**
      * Sets meanings
      *
-     * @param \Swagger\Client\Model\EntryMeaning[] $meanings List of context-specific meanings
+     * @param \ProWritingAidSDK\Model\EntryMeaning[] $meanings List of context-specific meanings
      *
      * @return $this
      */

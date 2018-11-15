@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ProWritingAidSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ProWritingAidSDK\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \ProWritingAidSDK\ObjectSerializer;
 
 /**
  * AnalysisSummary Class Doc Comment
  *
  * @category Class
  * @description Represents report summary
- * @package  Swagger\Client
+ * @package  ProWritingAidSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class AnalysisSummary implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'report_display_name' => 'string',
         'report_name' => 'string',
-        'summary_items' => '\Swagger\Client\Model\AnalysisSummaryItem[]',
+        'summary_items' => '\ProWritingAidSDK\Model\AnalysisSummaryItem[]',
         'number_of_issues' => 'int',
         'report_description' => 'string'
     ];
@@ -280,7 +280,7 @@ class AnalysisSummary implements ModelInterface, ArrayAccess
     /**
      * Gets summary_items
      *
-     * @return \Swagger\Client\Model\AnalysisSummaryItem[]
+     * @return \ProWritingAidSDK\Model\AnalysisSummaryItem[]
      */
     public function getSummaryItems()
     {
@@ -290,7 +290,7 @@ class AnalysisSummary implements ModelInterface, ArrayAccess
     /**
      * Sets summary_items
      *
-     * @param \Swagger\Client\Model\AnalysisSummaryItem[] $summary_items Found issues
+     * @param \ProWritingAidSDK\Model\AnalysisSummaryItem[] $summary_items Found issues
      *
      * @return $this
      */

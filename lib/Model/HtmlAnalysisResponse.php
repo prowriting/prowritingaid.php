@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ProWritingAidSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace ProWritingAidSDK\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \ProWritingAidSDK\ObjectSerializer;
 
 /**
  * HtmlAnalysisResponse Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  ProWritingAidSDK
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class HtmlAnalysisResponse implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'html' => 'string',
         'word_count' => 'int',
-        'summaries' => '\Swagger\Client\Model\AnalysisSummary[]'
+        'summaries' => '\ProWritingAidSDK\Model\AnalysisSummary[]'
     ];
 
     /**
@@ -276,7 +276,7 @@ class HtmlAnalysisResponse implements ModelInterface, ArrayAccess
     /**
      * Gets summaries
      *
-     * @return \Swagger\Client\Model\AnalysisSummary[]
+     * @return \ProWritingAidSDK\Model\AnalysisSummary[]
      */
     public function getSummaries()
     {
@@ -286,7 +286,7 @@ class HtmlAnalysisResponse implements ModelInterface, ArrayAccess
     /**
      * Sets summaries
      *
-     * @param \Swagger\Client\Model\AnalysisSummary[] $summaries 
+     * @param \ProWritingAidSDK\Model\AnalysisSummary[] $summaries 
      *
      * @return $this
      */
