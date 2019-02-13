@@ -44,21 +44,34 @@ Please follow the [installation procedure](#installation--usage) and then run th
 
 ```php
 <?php
+
 require_once(__DIR__ . '/vendor/autoload.php');
+use ProWritingAidSDK\Configuration;
+use ProWritingAidSDK\Api\TextApi;
+use ProWritingAidSDK\Model\TextAnalysisRequest;
 
-$configuration = new ProWritingAidSDK\Configuration();
-$configuration->setHost('https://api.prowritingaid.com');
-$configuration->setApiKey('licenseCode', 'YOUR_LICENSE_CODE');
-$api_instance = new ProWritingAidSDK\Api\ContextualThesaurusApi(null, $configuration);
+$config = new Configuration();
+$config->setHost('https://api.prowritingaid.com');
+$config->setApiKey('licenseCode', 'YOUR API KEY');
+$api_instance = new TextApi(null, $config);
 
-$data['context'] = 'This is a sample text in English to test the sdk thesaurus. This is a second paragraph in the document. This  is a new line.';
-$data['context_start'] = 17;
-$data['context_end'] = 20;
-$request = new \ProWritingAidSDK\Model\ContextualThesaurusRequest($data);
+$request = new TextAnalysisRequest();
+$request->setText('I place my cane firmly on the ground and, slowly, with its aid, \'
+                    \'I lower myself from the hammock. Now the rains have gone my joints \'
+                    \'don\'t hurt so badly. Today won\'t be too bad, I think. I\'m prone to \'
+                    \'be over optimistic. Could this be my last day. At this time the jungle \'
+                    \'is strangely subdued. She poke around in the ashes. Every day the \'
+                    \'weariness is even worst than beofre. I don\'t know yett. \n\'
+                    \'Whne? What a weka statement. Jaroslav Drabny is a Czech football goalkeeper. \'
+                    \'Bhuvnehwar Kumar is a Czech football goalkeeper. I just saw Siyabonga Siyo. \'
+                    \'I just saw Siyabonga Seyo. I read this article on RaelSport.');
+$request->setStyle('General');
+$request->setLanguage('en');
+$request->setReports(['grammar']);
 
 try {
     $result = $api_instance->post($request);
-    echo $result;
+    print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AsyncContextualThesaurusApi->asyncContextualThesaurusPost: ', $e->getMessage(), PHP_EOL;
 }
