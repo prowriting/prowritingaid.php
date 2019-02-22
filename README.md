@@ -73,7 +73,7 @@ try {
     $result = $api_instance->post($request);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling AsyncContextualThesaurusApi->asyncContextualThesaurusPost: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling the API: ', $e->getMessage(), PHP_EOL;
 }
 
 ?>
