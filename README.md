@@ -4,6 +4,8 @@ Official PHP prowritingaid.com API.
 
 - API version: v2
 
+For more information, please visit [https://prowritingaid.com/en/App/API#php](https://prowritingaid.com/en/App/API#php)
+
 ## Requirements
 
 PHP 5.5 and later
